@@ -1,0 +1,10 @@
+img {
+  width: 300px;
+}
+
+.newsCard {
+  border: 2px solid grey;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 1%;
+}
