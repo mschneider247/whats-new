@@ -10,6 +10,7 @@ import NewsContainer from '../NewsContainer/NewsContainer'
 import Menu from '../Menu/Menu'
 
 const data = {
+  default: [{title: 'Loading...'}],
   entertainment: entertainment,
   health: health,
   local: local,
@@ -17,17 +18,26 @@ const data = {
   technology: technology
 }
 
+// Should be able to fetch data and then update the state
+// data.default works for now...
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      news: data.local
+      news: data.default
     }
   }
 
   filterNews = (filter) => {
     this.setState({ news: data[filter]})
   }
+
+  // search news...  needs to look at each key of data
+  // then search that array?  hopefully
+  // in the array we will check if any titles or descriptions
+  // include a set of characters provided by the user
+  // this will be the current state of our SearchForm class...
 
   render () {
     return (
