@@ -21,16 +21,12 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      local
+      news: data.local
     }
   }
 
   filterNews = (filter) => {
-    console.log(filter);
-    console.log(data[filter]);
-    console.log(this.state);
-    // this.setState({ data[filter] })
-    //this.setState({filter})
+    this.setState({ news: data[filter]})
   }
 
   render () {
@@ -39,7 +35,7 @@ class App extends Component {
         <SearchForm />
         <Menu filterNews={this.filterNews}/>
         <section className="newsContainer">
-          <NewsContainer news={this.state.local}/>
+          <NewsContainer news={this.state.news}/>
         </section>
       </main>
     );
