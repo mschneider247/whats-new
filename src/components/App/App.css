@@ -10,6 +10,7 @@
   "header header"
   "menu news"
   "menu news";
+  grid-template-columns: 10% 90%;
   background: #141527;
   height: 100vh;
   text-align: center;
