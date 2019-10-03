@@ -1,5 +1,17 @@
 .menu {
+  margin-top: 5%;
+  margin-left: 5%;
   grid-area: menu;
   display: flex;
   flex-direction: column;
+}
+
+.menu button {
+  height: 40px;
+  margin: 3% 1%;
+  border-radius: 0 45% 45% 0
+}
+
+button:hover {
+  background-color: orange;
 }
