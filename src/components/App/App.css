@@ -5,7 +5,11 @@
 }
 
 .app {
-  display: flex;
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "menu news"
+  "menu news";
   background: #141527;
   height: 100vh;
   text-align: center;
@@ -14,7 +18,12 @@
   color: white;
 }
 
+.header {
+  grid-area: header;
+}
+
 .newsContainer {
+  grid-area: news;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;

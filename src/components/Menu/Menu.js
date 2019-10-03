@@ -4,7 +4,7 @@ import './Menu.css'
 const Menu = (props) => {
 
 return(
-  <div>
+  <div className="menu">
     <button onClick={() => {props.filterNews('local')}}>Local News</button>
     <button onClick={() => {props.filterNews('technology')}}>Technology</button>
     <button onClick={() => {props.filterNews('entertainment')}}>Entertainment</button>

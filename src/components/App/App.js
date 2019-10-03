@@ -10,7 +10,7 @@ import NewsContainer from '../NewsContainer/NewsContainer'
 import Menu from '../Menu/Menu'
 
 const data = {
-  default: [{title: 'Loading...'}],
+  default: [{id: 0, headline: 'Loading...', description: 'Please Wait...'}],
   entertainment: entertainment,
   health: health,
   local: local,
@@ -42,8 +42,12 @@ class App extends Component {
   render () {
     return (
       <main className="app">
-        <SearchForm />
-        <Menu filterNews={this.filterNews}/>
+        <section className="header">
+          <SearchForm />
+        </section>
+        <section >
+          <Menu filterNews={this.filterNews}/>
+        </section>
         <section className="newsContainer">
           <NewsContainer news={this.state.news}/>
         </section>
