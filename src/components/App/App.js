@@ -29,6 +29,8 @@ class App extends Component {
     }
   }
 
+  
+
   filterNews = (filter) => {
     this.setState({ news: data[filter]})
   }
