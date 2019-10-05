@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot 1`] = `
+<main
+  className="app"
+>
+  <section
+    className="header"
+  >
+    <SearchForm />
+  </section>
+  <section
+    className="menu"
+  >
+    <Menu
+      filterNews={[Function]}
+    />
+  </section>
+  <section
+    className="newsContainer"
+  >
+    <NewsContainer
+      news={
+        Array [
+          Object {
+            "description": "Please Wait...",
+            "headline": "Loading...",
+            "id": 0,
+          },
+        ]
+      }
+    />
+  </section>
+</main>
+`;
