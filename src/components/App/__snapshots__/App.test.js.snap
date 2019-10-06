@@ -23,9 +23,10 @@ exports[`App should match the snapshot 1`] = `
       news={
         Array [
           Object {
-            "description": "Please Wait...",
+            "description": "Please Wait to",
             "headline": "Loading...",
             "id": 0,
+            "img": "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/source.gif",
           },
         ]
       }

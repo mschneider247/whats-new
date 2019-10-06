@@ -6,7 +6,16 @@ describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    const newsData = {
+      default: [{
+        id: 0,
+        headline: 'Loading...',
+        description: 'Please Wait to',
+        img: 'https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/source.gif'
+      }],
+      technology: 'Dinosaurs...'
+    }
+    wrapper = shallow(<App data={newsData}/>);
   });
 
   it('should match the snapshot', () => {
