@@ -5,7 +5,7 @@ What's New is a news app built using React.  The user is able to browse differen
 This application was built with `create-react-app`.
 
 ## Created by:
-[Michael Schneider](https://github.com/mschneider247)
+[Michael Schneider](https://github.com/mschneider247/whats-new)
 
 ### Set Up
 
