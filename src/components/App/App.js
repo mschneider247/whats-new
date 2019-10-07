@@ -46,11 +46,6 @@ class App extends Component {
       news: reducedData
     });
   }
-  // search news...  needs to look at each key of data
-  // then search that array?  hopefully
-  // in the array we will check if any titles or descriptions
-  // include a set of characters provided by the user
-  // this will be the current state of our SearchForm class...
 
   render () {
     return (
