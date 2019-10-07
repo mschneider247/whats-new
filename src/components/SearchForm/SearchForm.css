@@ -4,3 +4,13 @@ header {
   padding: 5% 0;
 }
 
+input {
+  height: 40px;
+  width: 200px;
+  margin: 0 2% 0 40%;
+}
+
+button {
+  height: 40px;
+}
+
