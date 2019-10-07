@@ -16,13 +16,36 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => this.setState({
       news: this.data.local
-    }), 500) 
+    }), 1100)
   }
 
   filterNews = (filter) => {
     this.setState({ news: this.data[filter]})
   }
 
+  searchNews = ( { search } ) => {
+    let dataKeys = Object.keys(this.data)
+    let reducedData = dataKeys.reduce((acc, key) => {
+      this.data[key].forEach(newsItem => {
+        let headlineSplit = newsItem.headline.split(' ');
+        let descriptionSplit = newsItem.description.split(' ');
+          headlineSplit.forEach(element => {
+            if (element.toLowerCase() === search.toLowerCase()) {
+              return acc.push(newsItem)
+            }
+          })
+          descriptionSplit.forEach(element => {
+            if (element.toLowerCase() === search.toLowerCase()) {
+              return acc.push(newsItem)
+            }
+          })
+      })
+      return acc;
+    }, [])
+    this.setState({
+      news: reducedData
+    });
+  }
   // search news...  needs to look at each key of data
   // then search that array?  hopefully
   // in the array we will check if any titles or descriptions
@@ -33,7 +56,7 @@ class App extends Component {
     return (
       <main className="app">
         <section className="header">
-          <SearchForm />
+          <SearchForm searchNews={this.searchNews}/>
         </section>
         <section className="menu">
           <Menu filterNews={this.filterNews}/>
