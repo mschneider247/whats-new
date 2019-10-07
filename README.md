@@ -13,7 +13,7 @@ Clone down the repo.  Once the repo has been cloned run npm install and then fin
 
 ### Screenshots
 
-![what's new screenshot](./screenshots/whats-new.png)
+![what's new screenshot](./screenshots/whats-new-screenshot.png)
 ![Trello screenshot](./screenshots/trello.png)
 
 
