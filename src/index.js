@@ -7,7 +7,7 @@ const newsData = {
   default: [{
       id: 0,
       headline: 'Loading...',
-      description: 'Please Wait to',
+      description: 'Please Wait To',
       img: 'https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/source.gif'}],
 }
 

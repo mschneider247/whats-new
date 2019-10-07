@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './SearchForm.css';
 
 class SearchForm extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {search: ''}
+    this.props = props;
   }
 
   handleSearch = event => {
@@ -22,7 +23,7 @@ class SearchForm extends Component {
           value={this.state.search}
           onChange={event => this.handleSearch(event)} 
         />
-        <button>Search News</button>
+        <button onClick={() => {this.props.searchNews(this.state)}}>Search News</button>
       </header>
     )
   }
