@@ -1,4 +1,6 @@
 header {
+  display: flex;
   height: 120px;
   padding: 5% 0;
 }
+
