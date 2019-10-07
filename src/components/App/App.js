@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => this.setState({
       news: this.data.local
-    }), 1100)
+    }), 5100)
   }
 
   filterNews = (filter) => {
